@@ -1,15 +1,20 @@
-/* dark #061826 */
-
 @media(min-width: 0){
 /***	Global		***/
 	h1, h2, h3, h4, h5, h6 {
 		font-family: 'Nunito', sans-serif;
 		font-weight: 300;
 	}
-	p {
+	p, li, a {
 		font-family: 'Nunito', sans-serif;
 		font-weight: 300;
+		font-size: 20px;
+	}
+	p {
 		padding: 10px 0;
+	}
+	ul {
+		list-style:inherit;
+		padding-left: 20px;
 	}
 	h1 {
 		font-size: 62px;
@@ -19,6 +24,11 @@
 		font-size: 45px;
 		color: #00a0d3;
 		position: relative;
+	}
+	h3 {
+		text-transform: uppercase;
+		font-size: 20px;
+		margin-bottom: 30px;
 	}
 	h1:before {
 		content: '';
@@ -59,26 +69,79 @@
 	strong {
 		font-weight: 400;
 	}
+	.button {
+		padding: 20px 10px;
+		background-color:  #00a0d3;
+		color: #fff;
+		display: block;
+		text-transform: uppercase;
+		text-decoration: none;
+		text-align: center;
+		font-size: 14px;
+	}
+	ul.links {
+		list-style: none;
+		padding: 10px 0;
+
+	}
+	ul.links .grid {
+		text-align: center;
+		padding-right: 20px;
+		box-sizing: border-box;
+	}
+	ul.links .grid:last-child {
+		padding-right: 0;
+	}
+/***	Grid	***/
+	.grid {
+		display: inline-block;
+		vertical-align: top;
+		padding: 0 10px;
+    	box-sizing: border-box;
+	}
+	.grid:first-child {
+		padding-left: 0;
+	}
+	.grid:last-child {
+		padding-right: 0;
+	}
+	.grid-3 {
+		width: 25%;
+	}
+	.grid-4 {
+		width: 33.33333%;
+	}
+	.grid-6 {
+		width: 50%;
+	}
+	.grid-9 {
+		width: 75%;
+	}
 
 /***	Sections	***/
 	header {
 		height: 80px;
 		background-color: #fff;
 	}
-
-	.section .container{
+	section .container{
 		padding: 60px 120px;
-		border-top: 3px solid #bcbcbc;
 		box-sizing: border-box;
 	}
+	.section.section .container {
+		border-top: 3px solid #bcbcbc;
+	}
+	.section.primary .container {
+		border-top: none;
+	}
 
-	/*	Feature	*/
+/*	Feature	*/
 	.feature {
 		background-image: url(../images/hero.jpg);
 		background-size: cover;
 		background-repeat: no-repeat;
 		padding: 10px 0;
 		position: relative;
+		max-height: 400px;
 	}
 	.feature-overlay {
 		background-image: url(../images/pattern.png);
@@ -86,7 +149,7 @@
 		background-repeat: no-repeat;
 		position: absolute;
 		top: 0;
-		width: 60%;
+		width: 100%;
 		bottom: 0;
 	}
 	.feature h1 {
@@ -94,7 +157,38 @@
 		margin: 80px 0;
 		max-width: 70%;
 	}
+/* 	File Download	*/
+	.file-download {
+		padding: 10px 0;
+	}
+	.file-download .ppt-icon {
+		background-image: url(../images/ppt-icon.png);
+		background-size: contain;
+    	background-repeat: no-repeat;
+    	height: 106px;
+	}
+	.file-download .file-title h4 {
+		color: #00a0d3;
+		text-transform: uppercase;
+		font-size: 28px;
+		font-weight: 300;
+	}
+	.file-download .file-title p {
+		color: #bcbcbc;
+		text-transform: uppercase;
+		font-size: 14px;
+		font-weight: 300;
+	}
+	.file-download .button {
+		margin:30px auto;
+		width: 160px;
+	}
+/*	Support */
+	section.support {
+		background-color: #e8e8e9;
+	}
 	
+/* Footer	*/
 	footer {
 		background-color: #061826;
 		color: #dfe5e8;
