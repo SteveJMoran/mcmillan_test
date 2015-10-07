@@ -1,0 +1,133 @@
+/* dark #061826 */
+
+@media(min-width: 0){
+/***	Global		***/
+	h1, h2, h3, h4, h5, h6 {
+		font-family: 'Nunito', sans-serif;
+		font-weight: 300;
+	}
+	p {
+		font-family: 'Nunito', sans-serif;
+		font-weight: 300;
+		padding: 10px 0;
+	}
+	h1 {
+		font-size: 62px;
+		position: relative;
+	}
+	h2 {
+		font-size: 45px;
+		color: #00a0d3;
+		position: relative;
+	}
+	h1:before {
+		content: '';
+		display: block;
+		position: absolute;
+		left: -35px;
+		top: 8px;
+		width: 0; 
+		height: 0; 
+		border-top: 15px solid transparent;
+		border-bottom: 15px solid transparent;
+		border-left: 20px solid #ea3736;
+	}
+	h2:before {
+		content: '';
+		display: block;
+		position: absolute;
+		left: -25px;
+		top: 8px;
+		width: 0; 
+		height: 0; 
+		border-top: 10px solid transparent;
+		border-bottom: 10px solid transparent;
+		border-left: 15px solid #ea3736;
+	}
+	.hidden {
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+	.container{
+		margin: 0 auto;
+		max-width: 100%;
+	}
+	.caps {
+		text-transform: uppercase;
+	}
+	strong {
+		font-weight: 400;
+	}
+
+/***	Sections	***/
+	header {
+		height: 80px;
+		background-color: #fff;
+	}
+
+	.section {
+		padding: 60px 0;
+	}
+
+	/*	Feature	*/
+	.feature {
+		background-image: url(../images/hero.jpg);
+		background-size: cover;
+		background-repeat: no-repeat;
+		padding: 10px 0;
+		position: relative;
+	}
+	.feature-overlay {
+		background-image: url(../images/pattern.png);
+		background-size: cover;
+		background-repeat: no-repeat;
+		position: absolute;
+		top: 0;
+		width: 60%;
+		bottom: 0;
+	}
+	.feature h1 {
+		color: #fff;
+		margin: 80px 0;
+		max-width: 70%;
+	}
+	
+	footer {
+		background-color: #061826;
+		color: #dfe5e8;
+	}
+	footer .afterword {
+		font-size: 14px;
+		padding: 20px 0 60px;
+	}
+	footer .social {
+		text-align: right;
+		padding: 20px 0;
+	}
+	.social li {
+		width: 27px;
+		height: 27px;
+		line-height: 29px;
+		vertical-align: middle;
+		display: inline-block;
+		background-color: #6d6e71;
+		text-align: center;
+		border-radius: 20px;
+		margin-left:10px;
+	}
+	.social li a {
+		color: #061826;
+	}
+}
+
+@media(min-width: 665px){
+
+}
+
+@media(min-width: 992px){
+	.container{
+		margin: 0 auto;
+		max-width: 992px;
+	}
+}
